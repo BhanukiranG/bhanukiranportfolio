@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,20 +49,24 @@
         }
 
         .about-section {
-            padding: 80px 0;
+            padding: 80px 20px;
+            /* Adjust padding for mobile */
             text-align: center;
         }
 
         .about-heading {
-            font-size: 2rem;
-            margin-bottom: 20px;
+            font-size: 1.8rem;
+            /* Adjust font size for mobile */
+            margin-bottom: 15px;
             color: rgb(174, 0, 255);
         }
 
         .about-content {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            /* Adjust font size for mobile */
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 100%;
+            /* Allow content to occupy full width */
             margin: 0 auto;
         }
 
@@ -72,19 +77,43 @@
 
         .footer {
             display: flex;
-            padding: 25px 122px;
-            justify-content: space-evenly;
+            padding: 15px;
+            /* Adjust padding for mobile */
+            justify-content: center;
+            /* Center align footer content */
+            flex-wrap: wrap;
+            /* Allow items to wrap on smaller screens */
         }
 
         .footer ul {
             list-style: none;
+            margin-bottom: 10px;
+            /* Adjust margin for mobile */
         }
 
         footer .ftext {
             text-align: center;
+            width: 100%;
+            /* Full width text */
+        }
+
+        /* Media query for screens narrower than 768px (typical mobile screens) */
+        @media (max-width: 768px) {
+            .about-heading {
+                font-size: 1.6rem;
+            }
+
+            .about-content {
+                font-size: 1rem;
+            }
+
+            .footer {
+                padding: 10px;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -105,29 +134,33 @@
             <div class="about-content">
                 <div>
                     Hey there, I'm G Bhanu Kiran Goud, a passionate B.Tech graduate in Electronics and
-                Communication Engineering. I'm on a journey to explore the exciting intersections of technology and
-                innovation.
+                    Communication Engineering. I'm on a journey to explore the exciting intersections of technology and
+                    innovation.
                 </div>
 
                 <div>
-                    My focus is on Artificial Intelligence and Machine Learning. I've delved into machine learning during my
-                internships, using Python, TensorFlow, and scikit-learn to create smart solutions. Alongside, I have a
-                knack for Android app development. Projects like "oneCampus" and "Image To Speech Conversion" reflect my
-                drive to build practical, user-centered apps.
+                    My focus is on Artificial Intelligence and Machine Learning. I've delved into machine learning
+                    during my
+                    internships, using Python, TensorFlow, and scikit-learn to create smart solutions. Alongside, I have
+                    a
+                    knack for Android app development. Projects like "oneCampus" and "Image To Speech Conversion"
+                    reflect my
+                    drive to build practical, user-centered apps.
                 </div>
 
                 <div>
                     Teamwork is my forte, stemming from being a finalist in hackathons and winning idea presentations. I
-                thrive on collaborating with others to find innovative solutions. When not coding, I'm exploring
-                creative pursuits or enjoying the outdoors.
+                    thrive on collaborating with others to find innovative solutions. When not coding, I'm exploring
+                    creative pursuits or enjoying the outdoors.
                 </div>
 
-               <div>
-                Thanks for stopping by my portfolio. Feel free to browse my projects and experiences as I continue my
-                tech journey.
+                <div>
+                    Thanks for stopping by my portfolio. Feel free to browse my projects and experiences as I continue
+                    my
+                    tech journey.
 
-               </div>
-                <!-- <p>I'm a passionate developer with a strong interest in web development and programming. I enjoy solving problems and creating user-friendly experiences. When I'm not coding, you can find me exploring new technologies or reading a good book.</p> -->
+                </div>
+
             </div>
         </section>
     </main>
@@ -136,15 +169,12 @@
             <div class="first">
                 <h3>Bhanu Kiran's Portfolio</h3>
             </div>
-            <div class="second"></div>
             <ul>
                 <li>Home</li>
                 <li>About</li>
                 <li>Contact Me</li>
                 <!-- Add other footer links -->
             </ul>
-            <div class="third"></div>
-            <div class="fourth"></div>
         </div>
         <div class="ftext">
             <p style="text-align: center;color: gray;padding: 12px 0;">
@@ -153,4 +183,5 @@
         </div>
     </footer>
 </body>
+
 </html>

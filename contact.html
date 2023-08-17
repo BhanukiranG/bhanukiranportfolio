@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhanu Kiran Portfolio</title>
+    <title>Bhanu Kiran Portfolio - Contact Me</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -19,16 +18,15 @@
             color: white;
             font-family: 'Poppins', sans-serif;
         }
+
         nav {
-            .left{
-                font-size: 1rem;
-            }
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 80px;
             background-color: rgb(33, 0, 63);
         }
+
         nav ul {
             display: flex;
             justify-content: center;
@@ -49,49 +47,31 @@
             font-size: 1.02rem;
         }
 
-        .left {
-            font-size: 1.5rem;
+        .contact-section {
+            padding: 200px 0;
+            text-align: center;
         }
 
-        .firstSection {
-            height: 400px;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 80px 0;
-        }
-
-        .firstSection>div {
-            width: 40%;
-        }
-
-        .leftSection {
-            font-size: 3rem;
-            padding: 25px;
-        }
-
-        .rightSection img {
-            width: 80%;
-        }
-
-        .name {
+        .contact-heading {
+            font-size: 2rem;
+            margin-bottom: 20px;
             color: rgb(174, 0, 255);
         }
 
-        main hr {
-            border: 0;
-            background-color: rgb(174, 0, 255);
-            height: 1.2px;
-            margin: 60px 60px;
+        .contact-content {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-link {
+            color: rgb(174, 0, 255);
         }
 
         footer {
             background-color: rgb(33, 0, 63);
-            /* height: 235px; */
-
+            height: 235px;
         }
 
         .footer {
@@ -104,37 +84,8 @@
             list-style: none;
         }
 
-        .leftSection.buttons {
-            padding: 1000px;
-        }
-
-        .btn {
-            background-color: rgb(174, 0, 255);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            margin-right: 10px;
-            border-radius: 5px;
-            font-size: 20px;
-            text-decoration: none;
-            display: inline;
-        }
-
-        .btn:hover {
-            background-color: rgb(33, 0, 63);
-        }
-
-        .btn-resume {
-            background-color: rgb(145, 0, 211);
-        }
-
-        .btn-linkedin {
-            background-color: rgb(145, 0, 211);
-        }
-
-        .btn-github {
-            background-color: rgb(145, 0, 211);
+        footer .ftext {
+            text-align: center;
         }
         @media (max-width: 768px) {
             .section {
@@ -153,7 +104,6 @@
         }
     </style>
 </head>
-
 <body>
     <header>
         <nav>
@@ -173,53 +123,32 @@
         </nav>
     </header>
     <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                <!-- Hi, Iam <span class="name">Bhanu Kiran</span>
-                <div>
-                    This is my Portfolio
-                </div> -->
-                <span id="element"></span>
-                <div class="buttons">
-                    <a href="https://drive.google.com/file/d/116ijL2fWf-iDeSvRf4qAPzaCytmFk-RY/view?usp=sharing" target="_blank" class="btn btn-resume">Resume</a>
-                    <a href="https://www.linkedin.com/in/bhanu5102/" target="_blank" class="btn btn-linkedin">LinkedIn</a>
-                    <a href="https://github.com/BhanukiranG" target="_blank" class="btn btn-github">GitHub</a>
-                </div>
-            </div>
-            <div class="rightSection">
-                <img src="icon1.png" alt="">
+        <section class="contact-section">
+            <div class="contact-heading">Contact Me</div>
+            <div class="contact-content">
+                <p>If you'd like to get in touch, feel free to email me at <a href="mailto:bhanukiran5102@gmail.com" class="contact-link">bhanukiran5102@gmail.com</a></p>
             </div>
         </section>
-        <!-- <hr> -->
     </main>
-    <footer>
-        <div class="footer">
-            <div class="first">
-                <h3>Bhanu's Portfolio</h3>
-            </div>
-            <div class="second"></div>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact Me</li>
-            </ul>
-            <div class="third"></div>
-            <div class="fourth"></div>
+    <div class="footer">
+        <div class="first">
+            <h3>Bhanu's Portfolio</h3>
         </div>
-        <div class="ftext">
-            <p style="text-align: center;color: gray;padding: 12px 0;">
-                Copyright &#169; www.bhanukiranportfolio.com
-            </p>
-        </div>
-    </footer>
-    <!-- loading animation package -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Hi, I Am Bhanu Kiran'],
-            typeSpeed: 50,
-        });
-    </script>
+        <div class="second"></div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Me</li>
+            <!-- Add other footer links -->
+        </ul>
+        <div class="third"></div>
+        <div class="fourth"></div>
+    </div>
+    <div class="ftext">
+        <p style="text-align: center;color: gray;padding: 12px 0;">
+            Copyright &#169; www.bhanukiranportfolio.com
+        </p>
+    </div>
+</footer>
 </body>
-
 </html>

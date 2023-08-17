@@ -87,12 +87,27 @@
         footer .ftext {
             text-align: center;
         }
+        @media (max-width: 768px) {
+            .section {
+                padding: 40px 20px;
+            }
+
+            .section-heading {
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 14px;
+                margin: 5px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="left">Bhanu Kiran's Portfolio</div>
+            <div class="left">Bhanu's Portfolio</div>
             <div class="right">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -111,26 +126,25 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer">
-            <div class="first">
-                <h3>Bhanu Kiran's Portfolio</h3>
-            </div>
-            <div class="second"></div>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact Me</li>
-                <!-- Add other footer links -->
-            </ul>
-            <div class="third"></div>
-            <div class="fourth"></div>
+    <div class="footer">
+        <div class="first">
+            <h3>Bhanu's Portfolio</h3>
         </div>
-        <div class="ftext">
-            <p style="text-align: center;color: gray;padding: 12px 0;">
-                Copyright &#169; www.bhanukiranportfolio.com
-            </p>
-        </div>
-    </footer>
+        <div class="second"></div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Me</li>
+            <!-- Add other footer links -->
+        </ul>
+        <div class="third"></div>
+        <div class="fourth"></div>
+    </div>
+    <div class="ftext">
+        <p style="text-align: center;color: gray;padding: 12px 0;">
+            Copyright &#169; www.bhanukiranportfolio.com
+        </p>
+    </div>
+</footer>
 </body>
 </html>

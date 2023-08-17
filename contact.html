@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,6 +88,7 @@
         footer .ftext {
             text-align: center;
         }
+
         @media (max-width: 768px) {
             .section {
                 padding: 40px 20px;
@@ -102,8 +104,23 @@
                 margin: 5px;
             }
         }
+        footer ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer ul li a:hover {
+            color: rgb(211, 115, 255);
+            font-size: 1.02rem;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -126,29 +143,39 @@
         <section class="contact-section">
             <div class="contact-heading">Contact Me</div>
             <div class="contact-content">
-                <p>If you'd like to get in touch, feel free to email me at <a href="mailto:bhanukiran5102@gmail.com" class="contact-link">bhanukiran5102@gmail.com</a></p>
+                <p>If you'd like to get in touch, feel free to email me at <a href="mailto:bhanukiran5102@gmail.com"
+                        class="contact-link">bhanukiran5102@gmail.com</a></p>
             </div>
         </section>
     </main>
-    <div class="footer">
-        <div class="first">
-            <h3>Bhanu's Portfolio</h3>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>Bhanu's Portfolio</h3>
+            </div>
+            <div class="second"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+            <div class="third"></div>
+            <div class="fourth"></div>
         </div>
-        <div class="second"></div>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact Me</li>
-            <!-- Add other footer links -->
-        </ul>
-        <div class="third"></div>
-        <div class="fourth"></div>
-    </div>
-    <div class="ftext">
-        <p style="text-align: center;color: gray;padding: 12px 0;">
-            Copyright &#169; www.bhanukiranportfolio.com
-        </p>
-    </div>
-</footer>
+        <div class="ftext">
+            <p style="text-align: center;color: gray;padding: 12px 0;">
+                Copyright &#169; www.bhanukiranportfolio.com
+            </p>
+        </div>
+    </footer>
+    <!-- loading animation package -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hi, I Am Bhanu Kiran'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
+
 </html>

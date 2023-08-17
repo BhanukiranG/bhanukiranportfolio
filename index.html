@@ -19,15 +19,16 @@
             color: white;
             font-family: 'Poppins', sans-serif;
         }
-
         nav {
+            .left{
+                font-size: 1rem;
+            }
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 80px;
             background-color: rgb(33, 0, 63);
         }
-
         nav ul {
             display: flex;
             justify-content: center;
@@ -135,20 +136,34 @@
         .btn-github {
             background-color: rgb(145, 0, 211);
         }
+        @media (max-width: 768px) {
+            .section {
+                padding: 40px 20px;
+            }
+
+            .section-heading {
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 14px;
+                margin: 5px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left">Bhanu Kiran's Portfolio</div>
+            <div class="left">Bhanu's Portfolio</div>
             <div class="right">
                 <ul>
-                    <!-- anchor tag -->
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <!-- <li><a href="/">Projects</a></li> -->
                     <li><a href="contact.html">Contact Me</a></li>
+                    <!-- Add other navigation links -->
                 </ul>
             </div>
         </nav>
@@ -176,7 +191,7 @@
     <footer>
         <div class="footer">
             <div class="first">
-                <h3>Bhanu Kiran's Portfolio</h3>
+                <h3>Bhanu's Portfolio</h3>
             </div>
             <div class="second"></div>
             <ul>

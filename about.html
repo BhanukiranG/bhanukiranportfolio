@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,6 +66,8 @@
             margin: 0 auto;
         }
 
+
+
         footer {
             background-color: rgb(33, 0, 63);
             height: 235px;
@@ -76,6 +79,7 @@
             justify-content: space-evenly;
         }
 
+
         .footer ul {
             list-style: none;
         }
@@ -83,8 +87,24 @@
         footer .ftext {
             text-align: center;
         }
+
+        footer ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer ul li a:hover {
+            color: rgb(211, 115, 255);
+            font-size: 1.02rem;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -109,28 +129,32 @@
             <div class="about-content">
                 <div>
                     Hey there, I'm G Bhanu Kiran Goud, a passionate B.Tech graduate in Electronics and
-                Communication Engineering. I'm on a journey to explore the exciting intersections of technology and
-                innovation.
+                    Communication Engineering. I'm on a journey to explore the exciting intersections of technology and
+                    innovation.
                 </div>
 
                 <div>
-                    My focus is on Artificial Intelligence and Machine Learning. I've delved into machine learning during my
-                internships, using Python, TensorFlow, and scikit-learn to create smart solutions. Alongside, I have a
-                knack for Android app development. Projects like "oneCampus" and "Image To Speech Conversion" reflect my
-                drive to build practical, user-centered apps.
+                    My focus is on Artificial Intelligence and Machine Learning. I've delved into machine learning
+                    during my
+                    internships, using Python, TensorFlow, and scikit-learn to create smart solutions. Alongside, I have
+                    a
+                    knack for Android app development. Projects like "oneCampus" and "Image To Speech Conversion"
+                    reflect my
+                    drive to build practical, user-centered apps.
                 </div>
 
                 <div>
                     Teamwork is my forte, stemming from being a finalist in hackathons and winning idea presentations. I
-                thrive on collaborating with others to find innovative solutions. When not coding, I'm exploring
-                creative pursuits or enjoying the outdoors.
+                    thrive on collaborating with others to find innovative solutions. When not coding, I'm exploring
+                    creative pursuits or enjoying the outdoors.
                 </div>
 
-               <div>
-                Thanks for stopping by my portfolio. Feel free to browse my projects and experiences as I continue my
-                tech journey.
+                <div>
+                    Thanks for stopping by my portfolio. Feel free to browse my projects and experiences as I continue
+                    my
+                    tech journey.
 
-               </div>
+                </div>
                 <!-- <p>I'm a passionate developer with a strong interest in web development and programming. I enjoy solving problems and creating user-friendly experiences. When I'm not coding, you can find me exploring new technologies or reading a good book.</p> -->
             </div>
         </section>
@@ -138,14 +162,13 @@
     <footer>
         <div class="footer">
             <div class="first">
-                <h3>Bhanu Kiran's Portfolio</h3>
+                <h3>Bhanu's Portfolio</h3>
             </div>
             <div class="second"></div>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact Me</li>
-                <!-- Add other footer links -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
             </ul>
             <div class="third"></div>
             <div class="fourth"></div>
@@ -156,5 +179,14 @@
             </p>
         </div>
     </footer>
+    <!-- loading animation package -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hi, I Am Bhanu Kiran'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
+
 </html>
